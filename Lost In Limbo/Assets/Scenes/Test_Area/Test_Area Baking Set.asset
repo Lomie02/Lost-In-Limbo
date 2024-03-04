@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4881f9a2c4d568047b316028d20a8dca, type: 3}
+  m_Name: Test_Area Baking Set
+  m_EditorClassIdentifier: 
+  singleSceneMode: 1
+  dialogNoProbeVolumeInSetShown: 1
+  settings:
+    m_Version: 1
+    dilationSettings:
+      enableDilation: 1
+      dilationDistance: 1
+      dilationValidityThreshold: 0.25
+      dilationIterations: 1
+      squaredDistWeighting: 1
+    virtualOffsetSettings:
+      useVirtualOffset: 1
+      outOfGeoOffset: 0.01
+      searchMultiplier: 0.2
+      rayOriginBias: -0.001
+      collisionMask:
+        serializedVersion: 2
+        m_Bits: 4294967291
+  m_SceneGUIDs:
+  - 507820206bdca2546add0df4dfb26aad
+  scenesToNotBake: []
+  m_LightingScenarios:
+  - Default
+  cellDescs:
+    m_Keys: 
+    m_Values: []
+  m_SerializedPerSceneCellList: []
+  cellSharedDataAsset:
+    m_AssetGUID: 697344f696e530947a89eea48bfe45d6
+    m_StreamableAssetPath: APVStreamingAssets\2a19117ba9a513d41a22b9e28ed5ab9c\697344f696e530947a89eea48bfe45d6.bytes
+    m_ElementSize: 8192
+    m_StreamableCellDescs:
+      m_Keys: 
+      m_Values: []
+  scenarios:
+    m_Keys:
+    - Default
+    m_Values:
+    - sceneHash: -1190771457
+      cellDataAsset:
+        m_AssetGUID: b62028bc9424a8a48a7dfc974375a2f6
+        m_StreamableAssetPath: APVStreamingAssets\2a19117ba9a513d41a22b9e28ed5ab9c\b62028bc9424a8a48a7dfc974375a2f6.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 
+          m_Values: []
+      cellOptionalDataAsset:
+        m_AssetGUID: c19e1348739cd9444977052caee9412e
+        m_StreamableAssetPath: APVStreamingAssets\2a19117ba9a513d41a22b9e28ed5ab9c\c19e1348739cd9444977052caee9412e.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 
+          m_Values: []
+  cellBricksDataAsset:
+    m_AssetGUID: 8f4e27b4a52ecfb4382b156a42990c18
+    m_StreamableAssetPath: APVStreamingAssets\2a19117ba9a513d41a22b9e28ed5ab9c\8f4e27b4a52ecfb4382b156a42990c18.bytes
+    m_ElementSize: 16
+    m_StreamableCellDescs:
+      m_Keys: 
+      m_Values: []
+  cellSupportDataAsset:
+    m_AssetGUID: 9fea5d8710c90ae499200439fd9735b0
+    m_StreamableAssetPath: APVStreamingAssets\2a19117ba9a513d41a22b9e28ed5ab9c\9fea5d8710c90ae499200439fd9735b0.bytes
+    m_ElementSize: 262144
+    m_StreamableCellDescs:
+      m_Keys: 
+      m_Values: []
+  chunkSizeInBricks: 128
+  maxCellPosition: {x: 0, y: 0, z: 0}
+  minCellPosition: {x: -1, y: -1, z: -1}
+  globalBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 81, y: 81, z: 81}
+  bakedSimplificationLevels: 3
+  bakedMinDistanceBetweenProbes: 1
+  maxSHChunkCount: -1
+  L0ChunkSize: 65536
+  L1ChunkSize: 32768
+  L2TextureChunkSize: 32768
+  validityMaskChunkSize: 8192
+  supportPositionChunkSize: 98304
+  supportValidityChunkSize: 32768
+  supportTouchupChunkSize: 32768
+  supportOffsetsChunkSize: 98304
+  supportDataChunkSize: 262144
+  lightingScenario: Default
+  version: 0
+  freezePlacement: 0
+  simplificationLevels: 3
+  minDistanceBetweenProbes: 1
+  renderersLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  minRendererVolumeSize: 0.1

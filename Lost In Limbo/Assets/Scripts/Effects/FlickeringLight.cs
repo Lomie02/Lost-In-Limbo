@@ -8,11 +8,14 @@ public class FlickeringLight : MonoBehaviour
     
     Light m_LightObject;
     float m_Timer = 0;
+    float m_DefaultIntensity = 0;
 
     void Start()
     {
         m_LightObject = GetComponent<Light>();
         m_Timer = m_Duration;
+
+        m_DefaultIntensity = m_LightObject.intensity;
     }
 
     void FixedUpdate()
@@ -24,11 +27,11 @@ public class FlickeringLight : MonoBehaviour
             float LightIntensity = Random.Range(0, 3);
             if (LightIntensity == 1)
             {
-                m_LightObject.enabled = false;
+                m_LightObject.intensity = m_DefaultIntensity / 2;
             }
             else
             {
-                m_LightObject.enabled = true;
+                m_LightObject.intensity = m_DefaultIntensity;
             }
 
             m_Timer = m_Duration;

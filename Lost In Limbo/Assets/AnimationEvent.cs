@@ -8,7 +8,7 @@ public class AnimationEvent : MonoBehaviour
 {
     [SerializeField] string m_EventName;
     [SerializeField] UnityEvent m_OnTrigger;
-    void EventTrigger()
+    public void EventTrigger()
     {
         m_OnTrigger.Invoke();
     }

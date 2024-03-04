@@ -322,6 +322,7 @@ public class PlayerController : MonoBehaviour
 
         m_BodyAnimations.SetFloat("XPos", m_XAnimationLerp);
         m_BodyAnimations.SetFloat("ZPos", m_ZAnimationLerp);
+
     }
 
     public void PlayerDaggerState(bool _state)
@@ -332,8 +333,11 @@ public class PlayerController : MonoBehaviour
 
     void UpdateMouseMovement()
     {
+        Vector3 RotationAxis;
+
         float MouseX = Input.GetAxis("Mouse X") * m_MouseSensitivity * Time.deltaTime;
         float MouseY = Input.GetAxis("Mouse Y") * m_MouseSensitivity * Time.deltaTime;
+
 
         if (m_LookingOverShoulder || m_LookAtTarget)
         {
@@ -343,6 +347,12 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Rotate(transform.up, MouseX);
+
+        //RotationAxis.x = 0;
+        //RotationAxis.y = MouseX;
+        //RotationAxis.z = 0;
+        //
+        //transform.eulerAngles = new Vector3(RotationAxis.x,RotationAxis.y, RotationAxis.z);
 
         m_MouseLocationY -= MouseY;
         m_MouseLocationY = Mathf.Clamp(m_MouseLocationY, -30, m_CameraLookDownClamp);

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Menu.unity
     guid: 6921218d37bb03d478687e40a1f10e8d
   - enabled: 1
+    path: Assets/Scenes/Story_Intro_Cutscene.unity
+    guid: 5243cfeea6b14434699a8f12b6860e5d
+  - enabled: 1
     path: Assets/Scenes/Hospital_Level.unity
     guid: 507820206bdca2546add0df4dfb26aad
   m_configObjects: {}

@@ -70,7 +70,7 @@ public class AudioManager : MonoBehaviour
                     m_AudioTrack[m_CurrentTrack].m_Source.clip = m_AudioTrack[m_CurrentTrack].m_Clip[m_AudioTrack[m_CurrentTrack].m_CurrentClip];
                     m_AudioTrack[m_CurrentTrack].m_Source.Play();
 
-                    if (m_UseSubtitles)
+                    if (m_UseSubtitles && m_AudioTrack[m_CurrentTrack].m_Subtitles.Length > 0)
                     {
                         m_SubtitleTextObject.text = m_AudioTrack[m_CurrentTrack].m_Subtitles[m_AudioTrack[m_CurrentTrack].m_CurrentClip].m_SubtitleText;
                     }
@@ -79,7 +79,7 @@ public class AudioManager : MonoBehaviour
             else
             {
                 m_AudioClipIsPlaying = false;
-                if (m_UseSubtitles)
+                if (m_UseSubtitles && m_AudioTrack[m_CurrentTrack].m_Subtitles.Length > 0)
                     m_SubtitleTextObject.gameObject.SetActive(false);
             }
         }
@@ -87,7 +87,7 @@ public class AudioManager : MonoBehaviour
         {
             if (!m_AudioTrack[m_CurrentTrack].m_Source.isPlaying)
             {
-                if (m_UseSubtitles)
+                if (m_UseSubtitles && m_AudioTrack[m_CurrentTrack].m_Subtitles.Length > 0)
                 {
                     m_AudioClipIsPlaying = false;
                     m_SubtitleTextObject.gameObject.SetActive(false);
